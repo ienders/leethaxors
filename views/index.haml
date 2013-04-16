@@ -1,0 +1,37 @@
+!!! 5
+%html
+  %head
+    %title 1337 H4X0RZ!!!!1!
+    %link(href="/stylesheets/bootstrap.min.css" media="screen" rel ="stylesheet" type="text/css")/
+    %link(href="/stylesheets/flat-ui.css" media="screen" rel ="stylesheet" type="text/css")/
+    %link(href="/stylesheets/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css")/
+    %link(href="/stylesheets/app.css" media="screen" rel ="stylesheet" type="text/css")/
+    %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript")
+    %script(src="/javascripts/haml.js" type="text/javascript")
+    %script(src="/javascripts/underscore-min.js" type="text/javascript")
+    %script(src="/javascripts/backbone-min.js" type="text/javascript")
+    %script(src="/javascripts/md5.js" type="text/javascript")
+    %script(src="/javascripts/jst.js" type="text/javascript")
+    %script(src="/javascripts/app.js" type="text/javascript")
+  %body
+    .container-fluid
+      .row.topbar
+        .form
+          %form
+            .field
+              %input{type: 'text', name: 'name', placeholder: 'Project'}/
+            .field
+              %input{type: 'text', name: 'creator', placeholder: 'Creator'}/
+            .field
+              %input{type: 'email', name: 'email', placeholder: 'Email'}/
+            %a.btn.btn-danger.btn-large.create-project
+              %i.icon-plus-sign-alt
+              Project
+        %h1 1337 H4X0RZ!!!!1!
+        %a.create-hackday
+          %i.icon-lightbulb
+          Start a new Hackday Round
+        %p
+          This app itself is a misguided attempt at a HackDay Project 
+      .row
+        .content
