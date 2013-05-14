@@ -6,11 +6,8 @@ gem 'thin'
 
 # DB
 gem 'datamapper', require: 'data_mapper'
-gem 'dm-postgres-adapter'
-
-group :development, :test do
-  gem 'dm-sqlite-adapter'
-end
+gem 'dm-postgres-adapter', group: :production
+gem 'dm-sqlite-adapter', group: [ :development, :test ]
 
 gem 'sinatra-backbone', require: 'sinatra/backbone'
 
