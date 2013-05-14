@@ -48,7 +48,7 @@ class Leet < Sinatra::Base
   configure do
     DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/db/dev.db")
     DataMapper.finalize
-    DataMapper.auto_migrate!
+    DataMapper.auto_upgrade!
   end
 
   get '/stylesheets/app.css' do
